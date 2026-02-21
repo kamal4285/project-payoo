@@ -28,7 +28,7 @@
         <section class="w-11/12 mx-auto p-3 flex justify-between">
             <div class="left flex gap-1">
                 <div class="logo w-[60px]">
-                    <img src="assets/logo.png" alt="">
+                    <img src="../assets/logo.png" alt="">
                 </div>
                 <div class="balance-info">
                     <h2 class="text-xl font-bold">$ <span id="balance">45000</span></h2>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="right">
-                <a href="/payoo.html" class="btn btn-soft"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</a>
+                <a href="../payoo.html" class="btn btn-soft"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out</a>
             </div>
         </section>
     </header>
@@ -46,27 +46,27 @@
         <p class="text-neutral/50">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
         <div class="buttons grid grid-cols-3 gap-3">
             <button onclick="showOnly('add-money')" class="btn btn-soft flex-col h-full py-4">
-                <img src="assets/opt-1.png" alt="">
+                <img src="../assets/opt-1.png" alt="">
                 <p>Add Money</p>
             </button>
             <button onclick="showOnly('cashout')" class="btn btn-soft flex-col h-full py-4">
-                <img src="assets/opt-2.png" alt="">
+                <img src="../assets/opt-2.png" alt="">
                 <p>Cashout</p>
             </button>
             <button onclick="showOnly('transfer')" class="btn btn-soft flex-col h-full py-4">
-                <img src="assets/opt-3.png" alt="">
+                <img src="../assets/opt-3.png" alt="">
                 <p>Send Money</p>
             </button>
             <button onclick="showOnly('get-bonous')" class="btn btn-soft flex-col h-full py-4">
-                <img src="assets/opt-4.png" alt="">
+                <img src="../assets/opt-4.png" alt="">
                 <p>Get Bonus</p>
             </button>
             <button class="btn btn-soft flex-col h-full py-4">
-                <img src="assets/opt-5.png" alt="">
+                <img src="../assets/opt-5.png" alt="">
                 <p>Pay Bill</p>
             </button>
             <button onclick="showOnly('history')" class="btn btn-soft flex-col h-full py-4">
-                <img src="assets/opt-6.png" alt="">
+                <img src="../assets/opt-6.png" alt="">
                 <p>Transactions</p>
             </button>
         </div>
@@ -127,6 +127,30 @@
 
     </section>
 
+     <section id="pay-bill" class="w-11/12 mx-auto py-5">
+        <h2 class="text-xl font-bold mb-4">Pay Bill</h2>
+        <div class="card bg-base-100 w-full shadow-xs rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset text-lg text-black">
+                    <label class="label font-bold">Select to pay</label>
+                    <select id="add-money-bank" class="select w-full rounded-full bg-base-200 text-lg">
+                        <option disabled selected>Select bank</option>
+                        <option value="DBBL">DBBL</option>
+                        <option value="IBBL">IBBL</option>
+                        <option value="City Bank">City Bank</option>
+                    </select>
+                <label class="label font-bold">Biller Account Number</label>
+                <input id="add-money-number" maxlength="11" minlength="11" type="" class="input rounded-full bg-base-200 text-lg border-none p-4 w-full" placeholder="Enter account number" />
+                <label class="label font-bold">Amount to pay</label>
+                <input id="add-money-amount" type="number" class="input rounded-full bg-base-200 text-lg border-none p-4 w-full" placeholder="Add amount to pay" />
+                <label class="label font-bold">Pin Number</label>
+                <input id="add-money-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 text-lg border-none p-4 w-full" placeholder="Enter 4 digit pin number" />
+                <button id="add-money-btn" class="btn btn-primary rounded-full mt-4 text-lg">Pay Now</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
     <section id="transfer" class="w-11/12 mx-auto py-5 hidden">
          <h2 class="text-xl font-bold mb-4">Transfer Money</h2>
         <div class="card bg-base-100 w-full shadow-xs rounded-2xl">
@@ -151,10 +175,10 @@
         </div>
     </section>
 
-    <script src="script/machine.js"></script>
-    <script src="script/addMoney.js"></script>
-    <script src="script/cashout.js"></script>
-    <script src="script/transfer.js"></script>
-    <script src="script/bonous.js"></script>
+    <script src="../script/machine.js"></script>
+    <script src="../script/addMoney.js"></script>
+    <script src="../script/cashout.js"></script>
+    <script src="../script/transfer.js"></script>
+    <script src="../script/bonous.js"></script>
 </body>
 </html>
