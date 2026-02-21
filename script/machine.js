@@ -24,6 +24,7 @@ function showOnly(id){
     const addMoney = document.getElementById('add-money');
     const cashout = document.getElementById('cashout');
     const transferMoney = document.getElementById('transfer');
+    const getBonous = document.getElementById('get-bonous');
     const history = document.getElementById('history');
     // console.log(`Add money- ${addMoney}, Cashout- ${cashout}`);
 
@@ -31,6 +32,7 @@ function showOnly(id){
     addMoney.classList.add('hidden');
     cashout.classList.add('hidden');
     transferMoney.classList.add('hidden');
+    getBonous.classList.add('hidden');
     history.classList.add('hidden');
 
     // show only id
